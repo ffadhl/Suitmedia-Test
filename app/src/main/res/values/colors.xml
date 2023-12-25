@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black1">#FF000000</color>
+    <color name="blackLight">#686777</color>
+    <color name="blackLight2">#59686777</color>
+    <color name="black2">#04021D</color>
+
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="tosca">#2B637B</color>
+    <color name="strongBlue">#554AF0</color>
+
+
+</resources>

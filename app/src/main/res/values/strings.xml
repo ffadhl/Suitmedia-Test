@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Suitmedia</string>
+    <string name="itemName">FIRSTNAME LASTNAME</string>
+    <string name="itemEmail">EMAIL@EMAIL.COM</string>
+    <string name="name">Name</string>
+    <string name="palindrome">Palindrome</string>
+    <string name="fisrtscreen_photo">Photo</string>
+    <string name="check">Check</string>
+    <string name="next">Next</string>
+    <string name="back">Back</string>
+    <string name="tc_secondScreen">Second Screen</string>
+    <string name="welcome">Welcome</string>
+    <string name="dummyName">Fadhl Al-Hafizh</string>
+    <string name="selectedUserName">Selected User Name</string>
+    <string name="chooseUser">Choose a User</string>
+    <string name="tc_thirdScreen">Third Screen</string>
+    <string name="noSelectedUserName">No user selected</string>
+</resources>

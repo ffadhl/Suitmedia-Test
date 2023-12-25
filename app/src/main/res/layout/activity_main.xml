@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".app.ui.firstscreen.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginHorizontal="10dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/iv_photo"
+            android:layout_width="116dp"
+            android:layout_height="116dp"
+            android:layout_gravity="center"
+            android:alpha="0"
+            android:contentDescription="@string/fisrtscreen_photo"
+            android:src="@drawable/ic_photo"
+            tools:alpha="100"
+            tools:ignore="ImageContrastCheck" />
+
+        <LinearLayout
+            android:id="@+id/ll_upperForm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:orientation="vertical"
+            android:paddingHorizontal="20dp">
+
+            <EditText
+                android:id="@+id/input_name"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="15dp"
+                android:alpha="0"
+                android:background="@drawable/customshape_rectangle"
+                android:fontFamily="@font/poppinsmedium"
+                android:hint="@string/name"
+                android:paddingHorizontal="25dp"
+                android:paddingTop="14dp"
+                android:paddingBottom="10dp"
+                android:textColor="@color/black2"
+                android:textColorHint="@color/blackLight2"
+                tools:alpha="100"
+                tools:ignore="Autofill,TextFields,TextContrastCheck" />
+
+            <EditText
+                android:id="@+id/input_palindrome"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:alpha="0"
+                android:background="@drawable/customshape_rectangle"
+                android:fontFamily="@font/poppinsmedium"
+                android:hint="@string/palindrome"
+                android:paddingHorizontal="25dp"
+                android:paddingTop="14dp"
+                android:paddingBottom="10dp"
+                android:textColor="@color/black2"
+                android:textColorHint="@color/blackLight2"
+                tools:alpha="100"
+                tools:ignore="Autofill,TextFields,TextContrastCheck" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_buttons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:orientation="vertical"
+            android:paddingHorizontal="20dp">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_check"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="15dp"
+                android:alpha="0"
+                android:background="@drawable/customshape_rectangle"
+                android:backgroundTint="@color/tosca"
+                android:fontFamily="@font/poppinsmedium"
+                android:paddingHorizontal="25dp"
+                android:paddingVertical="10dp"
+                android:text="@string/check"
+                android:textColor="@color/white"
+                tools:alpha="100" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_next"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:alpha="0"
+                android:background="@drawable/customshape_rectangle"
+                android:backgroundTint="@color/tosca"
+                android:fontFamily="@font/poppinsmedium"
+                android:paddingHorizontal="25dp"
+                android:paddingVertical="10dp"
+                android:text="@string/next"
+                android:textColor="@color/white"
+                tools:alpha="100" />
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

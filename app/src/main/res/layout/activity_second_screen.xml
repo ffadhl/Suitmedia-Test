@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".app.ui.secondcreen.SecondScreenActivity">
+
+    <LinearLayout
+        android:id="@+id/ll_header_secondScreen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/customshape_stroke"
+        android:orientation="horizontal"
+        android:paddingHorizontal="30dp"
+        android:paddingVertical="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/iv_arrowBack"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:contentDescription="@string/back"
+            android:src="@drawable/ic_arrowback"
+            app:tint="@color/strongBlue" />
+
+        <TextView
+            android:id="@+id/tv_titleSecondScreen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppinssemibold"
+            android:gravity="center"
+            android:text="@string/tc_secondScreen"
+            android:textColor="@color/black2"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_welcomeUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_header_secondScreen"
+        android:orientation="vertical"
+        android:padding="25dp"
+        app:layout_constraintEnd_toEndOf="@+id/ll_header_secondScreen"
+        app:layout_constraintStart_toStartOf="@+id/ll_header_secondScreen"
+        app:layout_constraintTop_toBottomOf="@+id/ll_header_secondScreen">
+
+        <TextView
+            android:id="@+id/tv_welcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="0"
+            android:fontFamily="@font/poppinsregular"
+            android:gravity="center"
+            android:text="@string/welcome"
+            android:textColor="@color/black2"
+            android:textSize="14sp"
+            tools:alpha="100" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="0"
+            android:fontFamily="@font/poppinssemibold"
+            android:gravity="center"
+            android:text="@string/dummyName"
+            android:textColor="@color/black2"
+            android:textSize="20sp"
+            tools:alpha="100" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_userNotSelected"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:alpha="0"
+        android:fontFamily="@font/poppinssemibold"
+        android:text="@string/noSelectedUserName"
+        android:textColor="@color/black2"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_choose"
+        app:layout_constraintEnd_toEndOf="@+id/ll_welcomeUser"
+        app:layout_constraintStart_toStartOf="@+id/ll_welcomeUser"
+        app:layout_constraintTop_toBottomOf="@+id/ll_welcomeUser"
+        tools:alpha="100" />
+
+    <TextView
+        android:id="@+id/tv_userSelected"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:fontFamily="@font/poppinssemibold"
+        android:text="@string/selectedUserName"
+        android:textColor="@color/black2"
+        android:textSize="22sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/btn_choose"
+        app:layout_constraintEnd_toEndOf="@+id/ll_welcomeUser"
+        app:layout_constraintStart_toStartOf="@+id/ll_welcomeUser"
+        app:layout_constraintTop_toBottomOf="@+id/ll_welcomeUser" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_choose"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginHorizontal="25dp"
+        android:layout_marginBottom="32dp"
+        android:alpha="0"
+        android:background="@drawable/customshape_rectangle"
+        android:backgroundTint="@color/tosca"
+        android:fontFamily="@font/poppinsmedium"
+        android:paddingHorizontal="25dp"
+        android:paddingVertical="10dp"
+        android:text="@string/chooseUser"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:alpha="100"
+        tools:layout_editor_absoluteX="25dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
